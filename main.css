@@ -56,7 +56,7 @@
 
 
 :root {
-	--fontSizeXS: 1.2vw; /*16px;*/
+	--fontSizeXS: 1.4vw; /*16px;*/
 	--fontSizeS: 20px;
 	--fontSizeM: 30px;
 	--fontSizeL: 50px;
@@ -91,21 +91,21 @@ html, .main, .multiple_texts {
 body{
 	font-family: Helvetica;
 	color: black;
-	padding: var(--margin);
+	/*padding: var(--margin);*/
 	overflow: hidden;
 	height: auto;
 }
 
 .left_text {
 	position: fixed;
-	left: 0;
+	left: 10px;
 	top: 50%;
 	transform-origin: center left;
 	transform: rotate(-90deg) translate(-50%, 100%);
 }
 
 header {
-	z-index: 1;
+	z-index: 2;
 	background-color: white;
 	/*border-bottom: 1px solid red;*/
 	position: fixed;
@@ -177,7 +177,7 @@ header figure.logo > img {
 }*/
 
 div.main {
-	height: calc(100vh - var(--margin)*2);
+	height: 100vh; /*calc(100vh - var(--margin)*2);*/
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
   flex-wrap: unset;
@@ -195,6 +195,7 @@ div.main > div.section {
   position: relative;
   margin: 0;
   padding: 20%;
+  /*padding-top: 10%;*/
 }
 
 div.section:not(:first-child) {
@@ -203,13 +204,23 @@ div.section:not(:first-child) {
 
 div.section.intro {
 	min-height: calc(100vh - var(--margin)*2)!important;
+	min-height: 100vh!important;
+	position: relative;
 }
+div.section.intro > .title {
+	width: 60%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 div.section.servizi {
 	/*background-color: rgb(0,255,0,.2);*/
 }
 div.section.about {
 	/*background-color: rgb(0,0,255,.2);*/
-	min-height: calc(100vh - var(--margin)*2)!important;
+	min-height: 100vh!important; /*calc(100vh - var(--margin)*2)!important;*/
 	margin-bottom: 6em;
 }
 div.section.chisiamo {
@@ -297,7 +308,7 @@ div.section > .text {
 	padding-top: 20px;
 	padding-bottom: 30px;
 	gap: 20px;
-	transition: max-height .4s, padding .4s;
+	transition: max-height .4s, padding .5s;
 	max-height: 1000px;
 }
 .option_buttons > .option_duo > .option_inside > .option_moreoptions {
@@ -521,6 +532,7 @@ div.section.career .bottom > a {
 div.section.contattaci {
 	padding-left: 10%!important;
 	padding-right: 10%!important;
+	min-height: 100vh!important;
 }
 div.section.contattaci > .title {
 	text-align: center;
