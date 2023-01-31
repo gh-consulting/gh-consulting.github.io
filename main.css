@@ -125,7 +125,7 @@ header a {
 	text-transform: uppercase;
 	font-weight: 400;
 }
-header a:not(.contact):not(.active)::before {
+header > div.desktop > a:not(.contact):not(.active)::before {
 	content:'';
 	display: inline-block;
 	width: .6em;
@@ -140,7 +140,7 @@ header a:not(.contact):not(.active)::before {
 	background-color: white;
 	transition: background-color .2s;
 }
-header a:not(.contact).active::before {
+header > div.desktop > a:not(.contact).active::before {
 	content:'';
 	display: inline-block;
 	width: .6em;
@@ -167,6 +167,50 @@ header figure.logo {
 }
 header figure.logo > img {
 	width: 100%;
+}
+header .mobile {
+	display: none;
+}
+header .mobile_toggle {
+	display: none;
+	z-index: 4;
+}
+header .mobile > a.plus {
+	font-size: 60px;
+	color: var(--blue);
+	height: 100%;
+	display: inline-block;
+	line-height: 100%;
+	margin-top: -.3em;
+	cursor: pointer;
+	transition: .4s transform, .4s color;
+}
+header .mobile > a.rotated {
+	transform: rotate(45deg);
+	color: white;
+}
+header > .mobile_menu {
+	width: 100vw;
+	padding: 10%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--blue);
+	color: white;
+	z-index: 3;
+	transition: .4s transform;
+	transform: translate(0,-100%);
+}
+header > .mobile_menu.inView {
+	transform: translate(0,0);
+}
+header > .mobile_menu > div {
+	text-align: center;
+}
+header > .mobile_menu > div > a {
+	font-size: var(--fontSizeM);
+	line-height: 200%;
+	text-decoration: underline;
 }
 
 /*main:first-child section{
@@ -545,12 +589,12 @@ div.section.contattaci > .buttons {
 	margin: auto;
 }
 div.section.contattaci > .buttons > a {
-	background-color: var(--blue);
-	height: 40px;
-	width: 40px;
+	height: 80px;
+	width: 80px;
 	color: white;
-	padding: 18px;
-	border-radius: 24px;
+}
+div.section.contattaci .buttons {
+	height: 80px;
 }
 
 
@@ -569,4 +613,71 @@ footer p {
 }
 footer > .left > p:first-child {
 	text-decoration: underline;
+}
+
+
+
+/*############*/
+/*QUERY MOBILE*/
+/*############*/
+@media screen and (max-width: 768px) {
+	:root {
+		--fontSizeXS: 14px;
+		--fontSizeS: 14px;
+		--fontSizeM: 20px;
+		--fontSizeL: 30px;
+		/*--margin: 20px;*/
+	}
+
+	.main {
+		width: 100vw;
+		overflow-x: hidden;
+	}
+	.left_text {
+		display: none;
+	}
+	header {
+		padding: 10px;
+		height: 80px;
+	}
+	header figure.logo {
+		width: 60%;
+		margin-top: 0px;
+		margin-left: 0;
+	}
+	header .desktop {
+		display: none;
+	}
+	header .mobile {
+		display: inline-block;
+	}
+
+	div.main > div.section {
+		padding: 10%;
+		padding-top: 80px;
+	}
+	div.section .title {
+		font-weight: 600;
+	}
+
+	/*CHI SIAMO*/
+	div.section.chisiamo > .figure_frame > .frame_ginevra {
+		left: -6%;
+	}
+	div.section.chisiamo > .figure_frame > .frame_haiat {
+		right: 6%;
+	}
+	div.section.chisiamo > .figure_frame > .frame_ginevra,
+	div.section.chisiamo > .figure_frame > .frame_haiat {
+		width: 96%;
+	}
+	div.section.chisiamo > .figure_frame > .frame_ginevra > .name,
+	div.section.chisiamo > .figure_frame > .frame_haiat > .name {
+		text-align: left;
+	}
+
+	/*CAREER*/
+	div.section.career, .option_buttons > .option_duo > .option_inside {
+		flex-direction: column;
+	}
 }
