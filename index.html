@@ -28,12 +28,22 @@
 <div class='left_text'>Digital Strategy Consulting</div>
 
 <header>
-    <a href='./'><figure class='logo'><img src='logo/logo.png'></figure></a>
-    <div><a href='#servizi'>servizi</a></div>
-    <div><a href='#about'>about</a></div>
-    <div><a href='#chisiamo'>chi siamo</a></div>
-    <div><a href='#career'>career</a></div>
-    <div><a href='#contattaci' class='contact'>contattaci</a></div>
+    <a href='./' class='logo_wrapper desktop'><figure class='logo'><img src='logo/logo.png'></figure></a>
+    <a href='./' class='logo_wrapper mobile'><figure class='logo'><img src='logo/logo_mobile.png'></figure></a>
+    <div class='desktop'><a href='#servizi'>servizi</a></div>
+    <div class='desktop'><a href='#about'>about</a></div>
+    <div class='desktop'><a href='#chisiamo'>chi siamo</a></div>
+    <div class='desktop'><a href='#career'>career</a></div>
+    <div class='desktop'><a href='#contattaci' class='contact'>contattaci</a></div>
+
+    <div class='mobile mobile_toggle'><a onclick='this.classList.toggle("rotated");$(".mobile_menu")[0].classList.toggle("inView")' class='plus'>+</a></div>
+    <div class='mobile_menu'>
+        <div class='mobile_menu_links'><a href='#servizi'>servizi</a></div>
+        <div class='mobile_menu_links'><a href='#about'>about</a></div>
+        <div class='mobile_menu_links'><a href='#chisiamo'>chi siamo</a></div>
+        <div class='mobile_menu_links'><a href='#career'>career</a></div>
+        <div class='mobile_menu_links'><a href='#contattaci' class='contact'>contatti</a></div>
+    </div>
 </header>
 
 <div class='main' onscroll="whichSectionIsVisible()">
@@ -208,9 +218,78 @@
     <div id='contattaci' class='section contattaci'>
         <div class='title'>Hai un progetto in&nbsp;mente? Faccelo&nbsp;sapere!</div>
         <div class='buttons'>
-            <a href='www.google.com'></a>
-            <a href='www.google.com'></a>
-            <a href='www.google.com'></a>
+            <a href='https://www.google.com' target='_blank'>
+                <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:#0066B1;}
+                        .st1{fill:#FFFFFF;}
+                        .st2{fill:#FDFDFD;}
+                    </style>
+                    <g>
+                        <circle class="st0" cx="40" cy="40" r="30.7"/>
+                        <path class="st1" d="M24.1,55c-0.7,0-1.4-0.3-2-0.8s-0.8-1.2-0.8-2V27.8c0-0.7,0.3-1.4,0.8-2c0.6-0.6,1.2-0.8,2-0.8h31.8
+                            c0.7,0,1.4,0.3,2,0.8s0.8,1.2,0.8,2v24.3c0,0.7-0.3,1.4-0.8,2c-0.6,0.6-1.2,0.8-2,0.8H24.1z M38.3,40.2l-14.2-9.3v21.3h31.8V30.9
+                            l-14.2,9.3C40.7,40.9,39.3,40.9,38.3,40.2z M40,37.6l15.3-9.7H24.8L40,37.6z M24.1,30.4v-2.6v24.3V30.4z"/>
+                    </g>
+                </svg>
+            </a>
+
+            <a href='https://www.instagram.com' target='_blank'>
+                <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:#0066B1;}
+                        .st1{fill:#FFFFFF;}
+                        .st2{fill:#FDFDFD;}
+                    </style>
+                    <g>
+                        <circle class="st0" cx="40" cy="40" r="30.7"/>
+                        <g>
+                            <g>
+                                <path class="st1" d="M40,24.1c5.2,0,5.8,0,7.8,0.1c1.9,0.1,2.9,0.4,3.6,0.7c0.9,0.4,1.5,0.8,2.2,1.4c0.7,0.7,1.1,1.3,1.4,2.2
+                                    c0.3,0.7,0.6,1.7,0.7,3.6c0.1,2,0.1,2.7,0.1,7.8s0,5.8-0.1,7.8c-0.1,1.9-0.4,2.9-0.7,3.6c-0.4,0.9-0.8,1.5-1.4,2.2
+                                    c-0.7,0.7-1.3,1.1-2.2,1.4c-0.7,0.3-1.7,0.6-3.6,0.7c-2,0.1-2.7,0.1-7.8,0.1c-5.2,0-5.8,0-7.8-0.1c-1.9-0.1-2.9-0.4-3.6-0.7
+                                    c-0.9-0.4-1.5-0.8-2.2-1.4c-0.7-0.7-1.1-1.3-1.4-2.2c-0.3-0.7-0.6-1.7-0.7-3.6c-0.1-2-0.1-2.7-0.1-7.8s0-5.8,0.1-7.8
+                                    c0.1-1.9,0.4-2.9,0.7-3.6c0.4-0.9,0.8-1.5,1.4-2.2c0.7-0.7,1.3-1.1,2.2-1.4c0.7-0.3,1.7-0.6,3.6-0.7C34.2,24.2,34.8,24.1,40,24.1
+                                     M40,20.7c-5.3,0-5.9,0-8,0.1c-2.1,0.1-3.5,0.4-4.7,0.9c-1.3,0.5-2.4,1.2-3.4,2.2c-1.1,1.1-1.7,2.2-2.2,3.4
+                                    c-0.5,1.2-0.8,2.6-0.9,4.7c-0.1,2.1-0.1,2.7-0.1,8c0,5.3,0,5.9,0.1,8c0.1,2.1,0.4,3.5,0.9,4.7c0.5,1.3,1.2,2.4,2.2,3.4
+                                    c1.1,1.1,2.2,1.7,3.4,2.2c1.2,0.5,2.6,0.8,4.7,0.9c2.1,0.1,2.7,0.1,8,0.1c5.3,0,5.9,0,8-0.1c2.1-0.1,3.5-0.4,4.7-0.9
+                                    c1.3-0.5,2.4-1.2,3.4-2.2c1.1-1.1,1.7-2.2,2.2-3.4c0.5-1.2,0.8-2.6,0.9-4.7c0.1-2.1,0.1-2.7,0.1-8s0-5.9-0.1-8
+                                    c-0.1-2.1-0.4-3.5-0.9-4.7c-0.5-1.3-1.2-2.4-2.2-3.4c-1.1-1.1-2.2-1.7-3.4-2.2c-1.2-0.5-2.6-0.8-4.7-0.9
+                                    C45.9,20.7,45.3,20.7,40,20.7L40,20.7z"/>
+                                <path class="st1" d="M40,30.1c-5.5,0-9.9,4.4-9.9,9.9s4.4,9.9,9.9,9.9c5.5,0,9.9-4.4,9.9-9.9S45.5,30.1,40,30.1z M40,46.4
+                                    c-3.6,0-6.4-2.9-6.4-6.4s2.9-6.4,6.4-6.4s6.4,2.9,6.4,6.4S43.6,46.4,40,46.4z"/>
+                                <circle class="st1" cx="50.3" cy="29.7" r="2.3"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+            <a href='https://www.linkedin.com' target='_blank'>
+                <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:#0066B1;}
+                        .st1{fill:#FFFFFF;}
+                        .st2{fill:#FDFDFD;}
+                    </style>
+                    <g>
+                        <circle class="st0" cx="40" cy="40" r="30.7"/>
+                        <g>
+                            <g>
+                                <path class="st2" d="M42.4,35.8c0.5-0.6,0.9-1.1,1.4-1.6c1.6-1.5,3.5-2.3,5.7-2.2c1.2,0,2.4,0.1,3.6,0.4c2.7,0.8,4.2,2.6,5,5.2
+                                    c0.6,2,0.7,4,0.7,6c0,4.2,0,8.5,0,12.7c0,0.4-0.1,0.5-0.5,0.5c-2.2,0-4.4,0-6.6,0c-0.4,0-0.5-0.1-0.5-0.5c0-4,0-8.1,0-12.1
+                                    c0-1-0.1-2-0.4-3c-0.5-1.8-1.8-2.7-3.7-2.6c-2.6,0.1-3.9,1.4-4.3,4.1c-0.1,0.6-0.1,1.3-0.1,1.9c0,3.9,0,7.9,0,11.8
+                                    c0,0.4-0.1,0.5-0.5,0.5c-2.2,0-4.4,0-6.6,0c-0.4,0-0.5-0.1-0.5-0.4c0-7.8,0-15.6,0-23.3c0-0.4,0.1-0.5,0.5-0.5c2.1,0,4.2,0,6.3,0
+                                    c0.4,0,0.5,0.1,0.5,0.5C42.4,33.9,42.4,34.9,42.4,35.8z"/>
+                                <path class="st2" d="M30.4,44.7c0,3.8,0,7.7,0,11.5c0,0.4-0.1,0.6-0.5,0.6c-2.2,0-4.4,0-6.6,0c-0.4,0-0.5-0.1-0.5-0.4
+                                    c0-7.8,0-15.6,0-23.4c0-0.3,0.1-0.4,0.4-0.4c2.2,0,4.4,0,6.7,0c0.4,0,0.5,0.2,0.5,0.5C30.4,36.9,30.4,40.8,30.4,44.7z"/>
+                                <path class="st2" d="M31,24.8c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.3c0-2.4,2-4.4,4.4-4.4C29,20.5,31,22.4,31,24.8z"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
         </div>
 
         <footer>
