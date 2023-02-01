@@ -36,13 +36,13 @@
     <div class='desktop'><a href='#career'>career</a></div>
     <div class='desktop'><a href='#contattaci' class='contact'>contattaci</a></div>
 
-    <div class='mobile mobile_toggle'><a onclick='this.classList.toggle("rotated");$(".mobile_menu")[0].classList.toggle("inView")' class='plus'>+</a></div>
+    <div class='mobile mobile_toggle'><a onclick='this.classList.toggle("rotated");$(".mobile_menu")[0].classList.toggle("inView");$(".main")[0].classList.toggle("partlyHidden")' class='plus'>+</a></div>
     <div class='mobile_menu'>
-        <div class='mobile_menu_links'><a href='#servizi'>servizi</a></div>
-        <div class='mobile_menu_links'><a href='#about'>about</a></div>
-        <div class='mobile_menu_links'><a href='#chisiamo'>chi siamo</a></div>
-        <div class='mobile_menu_links'><a href='#career'>career</a></div>
-        <div class='mobile_menu_links'><a href='#contattaci' class='contact'>contatti</a></div>
+        <div class='mobile_menu_links'><a href='#servizi' onclick='$(".plus")[0].classList.toggle("rotated");$(".mobile_menu")[0].classList.toggle("inView");$(".main")[0].classList.toggle("partlyHidden")'>servizi</a></div>
+        <div class='mobile_menu_links'><a href='#about' onclick='$(".plus")[0].classList.toggle("rotated");$(".mobile_menu")[0].classList.toggle("inView");$(".main")[0].classList.toggle("partlyHidden")'>about</a></div>
+        <div class='mobile_menu_links'><a href='#chisiamo' onclick='$(".plus")[0].classList.toggle("rotated");$(".mobile_menu")[0].classList.toggle("inView");$(".main")[0].classList.toggle("partlyHidden")'>chi siamo</a></div>
+        <div class='mobile_menu_links'><a href='#career' onclick='$(".plus")[0].classList.toggle("rotated");$(".mobile_menu")[0].classList.toggle("inView");$(".main")[0].classList.toggle("partlyHidden")'>career</a></div>
+        <div class='mobile_menu_links'><a href='#contattaci' class='contact' onclick='$(".plus")[0].classList.toggle("rotated");$(".mobile_menu")[0].classList.toggle("inView");$(".main")[0].classList.toggle("partlyHidden")'>contatti</a></div>
     </div>
 </header>
 
@@ -93,7 +93,6 @@
             <div class='option_duo'>
                 <div class='button' alt='brand'>brand building, rebranding<br>e brand lift</div>
                 <div class='option_inside closed' alt='brand'>
-                    <ul class='option_moreoptions'></ul>
                     <div class='descript'>Che tu offra un prodotto o un servizio, nella mente delle persone non sei solo quello, ma un complesso insieme di sensazioni, associazioni e percezioni che permettono loro di distinguerti dagli altri competitors e reputarti adatto o meno al bisogno che hanno bisogno di soddisfare. Il brand building ti permette di controllare quanto più possibile il mix di percezioni che vuoi che i tuoi clienti abbiano di te.</div>
                 </div>
             </div>
@@ -135,7 +134,6 @@
             <div class='option_duo'>
                 <div class='button' alt='cyber'>Cyber & Strategic Consulting</div>
                 <div class='option_inside closed' alt='cyber'>
-                    <ul class='option_moreoptions'></ul>
                     <div class='descript'>La trasformazione digitale che stiamo vivendo porta ad incrementare l'importanza dei dati soprattutto all'interno delle realtà aziendali. Questo offre ai malintenzionati maggiori opportunità. Proprio per questo G&H mette a disposizione le proprie competenze per lo sviluppo e implementazione di strategie su misura per la sicurezza informatica.</div>
                 </div>
             </div>
@@ -143,7 +141,6 @@
             <div class='option_duo'>
                 <div class='button' alt='core'>Core business operation (Organigrammi, Business Plan, ecc)</div>
                 <div class='option_inside closed' alt='core'>
-                    <ul class='option_moreoptions'></ul>
                     <div class='descript'>La gestione delle informazioni e dei documenti base all'interno di una realtà aziendale, come può essere un banale organigramma o un business plan, spesso richiede un effort notevole in termini di tempo, oltre che richiedere la presenza di competenze adatte alla loro redazione. Per questo G&H mette a disposizione le competenze ed esperienze legate al mondo delle startup e aziendali per la produzione di questo tipo di documenti, anche a partire da zero.</div>
                 </div>
             </div>
@@ -151,7 +148,6 @@
             <div class='option_duo'>
                 <div class='button' alt='project'>Project Management e PMO</div>
                 <div class='option_inside closed' alt='project'>
-                    <ul class='option_moreoptions'></ul>
                     <div class='descript'>Grazie alle competenze ed esperienze pluriennali del team di project management, G&H garantisce la capacità di gestione dei progetti, sia guardando le attività di back office e front office aziendale, sia offrendo un servizio di analisi, progettazione, pianificazione e realizzazione degli obiettivi di un progetto, gestendolo in tutte le sue caratteristiche e fasi evolutive, nel rispetto di precisi vincoli di progetto.</div>
                 </div>
             </div>
@@ -191,7 +187,7 @@
                 <div class='info'>Si laurea in Scienze della Comunicazione e frequenta il master in Marketing and Sales della Rome Business School. Aiuta aziende locali a delineare strategie di marketing e comunicazione, affiancando imprenditori, micro e piccole imprese nel raggiungimento dei propri obiettivi. È appassionata di Startup, imprenditoria e innovazione.</div>
             </div>
         </div>
-        <div class='text'>Haiat e Ginevra hanno dato vita a G&H dopo una prima esperienza avuta insieme nella realizzazione di una startup operante nel settore del green finance. Appassionate del mondo della consulenza, hanno deciso di mettere in comune i propri backgroud e le proprie competenze per offrire servizi di alta qualità.</div>
+        <div class='text'>Haiat e Ginevra hanno dato vita a G&H dopo una prima esperienza avuta insieme nella realizzazione di una startup operante nel settore del green finance. Appassionate del mondo della consulenza, hanno deciso di mettere in comune i propri background e le proprie competenze per offrire servizi di alta qualità.</div>
     </div>
     <div id='career' class='section career'>
         <div class='left'>
@@ -201,17 +197,20 @@
         <div class='right'>
             <div class='card'>
                 <div class='top'>
-                    <div class='title'>posizione</div>
+                    <div class='title'>WEBDESIGN</div>
                     <div class='sliders'>
-                        <div></div>
-                        <div class='active'></div>
-                        <div></div>
+                        <a onclick='$("#descript_1")[0].scrollIntoView(true);$("#career")[0].scrollIntoView(true)' class='active'></a>
+                        <a onclick='$("#descript_2")[0].scrollIntoView(true);$("#career")[0].scrollIntoView(true)' href='#descript'></a>
+                        <a onclick='$("#descript_3")[0].scrollIntoView(true);$("#career")[0].scrollIntoView(true)' href='#descript'></a>
+                        <!--a href='#descript_3'></a-->
                     </div>
                 </div>
-                <div class='bottom'>
-                    <div class='descript'>Una descrizione del lavoro da svolgere, un lavoro bello, bellissimo, fatto di lavoretti più piccoli, tutti uniti in un unico lavoro bello. È una descrizione del lavoro da svolgere, un lavoro bello, bellissimo, fatto di lavoretti più piccoli, tutti uniti in un unico lavoro bello.</div>
-                    <a href='mailto:google@google.com?subject=candidatura'>Invia la tua candidatura</a>
+                <div class='bottom' onscroll="checkIfDescriptVisible()">
+                    <div id='descript_1' class='descript titolo_webdesign'>Una prima descrizione del lavoro da svolgere, un lavoro bello, bellissimo, fatto di lavoretti più piccoli, tutti uniti in un unico lavoro bello.</div>
+                    <div id='descript_2' class='descript titolo_commercialista'>Una seconda descrizione del lavoro da svolgere, un lavoro bello, bellissimo, fatto di lavoretti più piccoli, tutti uniti in un unico lavoro bello.</div>
+                    <div id='descript_3' class='descript titolo_HR-consultant'>Una terza descrizione del lavoro da svolgere, un lavoro bello, bellissimo, fatto di lavoretti più piccoli, tutti uniti in un unico lavoro bello.</div>
                 </div>
+                <a href='mailto:google@google.com?subject=candidatura_web_design'>Invia la tua candidatura</a>
             </div>
         </div>
     </div>
