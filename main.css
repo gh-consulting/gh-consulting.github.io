@@ -230,6 +230,10 @@ div.main {
 	flex-direction: column;
 	gap: 20px;
 }
+div.main.partlyHidden {
+	opacity: .2;
+	overflow: hidden;
+}
 
 div.main > div.section {
 	/*min-height: calc(100vh - var(--margin)*2);*/
@@ -538,7 +542,7 @@ div.section.career > .right > .card > .top > .sliders {
 	top: 0;
 	right: 0;
 }
-div.section.career > .right > .card > .top > .sliders > div {
+div.section.career > .right > .card > .top > .sliders > a {
 	display: inline-flex;
   width: .8rem;
   height: .8rem;
@@ -549,15 +553,15 @@ div.section.career > .right > .card > .top > .sliders > div {
   transition: .4s background;
   cursor: pointer;
 }
-div.section.career > .right > .card > .top > .sliders > div.active {
+div.section.career > .right > .card > .top > .sliders > a.active {
   background: white;
 }
-div.section.career .bottom > .descript {
-	font-size: var(--fontSizeS);
-	color: white;
-	margin-block-end: 30px;
-	max-height: 12em;
-	overflow: scroll;
+div.section.career .bottom {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
 }
 div.section.career .bottom > .descript {
 	font-size: var(--fontSizeS);
@@ -565,11 +569,15 @@ div.section.career .bottom > .descript {
 	margin-block-end: 30px;
 	max-height: 12em;
 	overflow: scroll;
+	min-width: 100%;
+	scroll-snap-align: start;
 }
-div.section.career .bottom > a {
+div.section.career .card > a {
 	font-size: var(--fontSizeS);
 	color: white;
 	font-weight: 400;
+	position: absolute;
+	bottom: 20px;
 }
 
 
@@ -622,7 +630,7 @@ footer > .left > p:first-child {
 /*############*/
 @media screen and (max-width: 768px) {
 	:root {
-		--fontSizeXS: 14px;
+		--fontSizeXS: 13px;
 		--fontSizeS: 14px;
 		--fontSizeM: 20px;
 		--fontSizeL: 30px;
@@ -660,6 +668,53 @@ footer > .left > p:first-child {
 		font-weight: 600;
 	}
 
+	/*SERVIZI*/
+	.option_buttons,
+	div.section.chisiamo > .text {
+		margin-block-end: 100%;
+	}
+	div.section.career > .right {
+		margin-block-end: 30%;
+	}
+	.option_buttons > .option_duo > .option_inside {
+		flex-direction: column;
+	}
+	.option_buttons > .option_duo > .option_inside > .option_moreoptions {
+		padding: 0;
+		margin: 0;
+	}
+	.option_buttons > .option_duo > .option_inside > .option_moreoptions > li {
+		text-align: center;
+		display: block;
+	}
+	.option_buttons > .option_duo > .option_inside > .descript {
+		padding-top: 0;
+	}
+	/*.option_buttons > .option_duo {
+		height: 3em;
+	}
+	.option_buttons > .option_duo > .option_inside {
+		background-color: var(--blue);
+		border-radius: 0 0 20px 20px;
+		margin-top: -1.4em;
+		z-index: -1;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		color: white;
+		flex-direction: column;
+	}
+	.option_buttons > .option_duo > .option_inside > .descript {
+		width: calc(100% - 20px);
+	}
+	.option_buttons > .option_duo > .option_inside > .option_moreoptions {
+		padding: 0;
+		width: calc(100% - 20px);
+	}
+	.option_buttons > .option_duo > .option_inside > .option_moreoptions > li {
+		text-align: center;
+	}*/
+
 	/*CHI SIAMO*/
 	div.section.chisiamo > .figure_frame > .frame_ginevra {
 		left: -6%;
@@ -676,8 +731,36 @@ footer > .left > p:first-child {
 		text-align: left;
 	}
 
+
+	/*ABOUT*/
+	.section.about > .multiple_texts {
+		height: 100%;
+	}
+
 	/*CAREER*/
-	div.section.career, .option_buttons > .option_duo > .option_inside {
+	div.section.career {
 		flex-direction: column;
+	}
+
+	/*CONTATTI*/
+	div.section.contattaci > .buttons {
+		max-width: 60%;
+	}
+
+	footer {
+		position: relative;
+		left: 0;
+		transform: none;
+		width: 100%;
+		flex-direction: column;
+	}
+	footer p {
+		font-size: var(--fontSizeM);
+		text-align: center;
+		font-weight: 100;
+		line-height: 110%;
+	}
+	footer > .right > p:first-child {
+		margin: 0;
 	}
 }
