@@ -148,6 +148,30 @@ function checkIfTextVisible() {
 	}*/
 }
 
+function checkIfDescriptVisible() {
+	const allOpenJobs = document.querySelectorAll(".right > .card > .bottom > .descript");
+	const openJobsSlider = document.querySelectorAll(".right > .card > .top > .sliders > a");
+	var variableHolder = {};
+
+	$(allOpenJobs).each(function( index ) {
+		variableHolder["openJob-"+index] = $(allOpenJobs[index]);
+	});
+
+	$.each(variableHolder, function(key,valueObj){
+		//console.log(variableHolder);
+	    //console.log(key, valueObj)
+	    if(($(valueObj)[0].getBoundingClientRect().right > $('.right > .card')[0].getBoundingClientRect().left+30) && ($(valueObj)[0].getBoundingClientRect().left < $('.right > .card')[0].getBoundingClientRect().right-30)) {
+	    	//console.log('yay!', $(valueObj)[0]);
+	    	//console.log(itemNumber);
+	    	var itemNumber = key.replace('openJob-','');
+	    	var jobName = valueObj[0].classList[1].replace('titolo_','').replaceAll('-',' ');
+	    	$('.right > .card > .top > .title')[0].innerText = jobName;
+			openJobsSlider.forEach((el) => {el.classList.remove('active')});
+			openJobsSlider[itemNumber].classList.add('active');
+		}
+	});
+}
+
 
 
 $( document ).ready(function() {
@@ -170,7 +194,7 @@ $( document ).ready(function() {
 });
 
 function whichSectionIsVisible() {
-	const allHeadersOptions = document.querySelectorAll("header > div > a");
+	const allHeadersOptions = document.querySelectorAll("header > div > a:not(.plus)");
 	var variableHolder = {};
 
 	$(allHeadersOptions).each(function( index ) {
