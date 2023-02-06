@@ -1,24 +1,65 @@
-/*jQuery.get('projects.txt', function(data) {
+jQuery.get('projects.txt', function(data) {
     var myText = data;
 
-    const rule_speaker  = /<speaker>.*?<speaker>/g;
-	const aboutText = myText.match(/<about>.*?<about>/)[0].replaceAll('<about>','');
-	const projTitles = myText.match(/<title>.*?<\/>/g);
-	const projYears = myText.match(/<year>.*?<\/>/g);
-	const projCategories = myText.match(/<category>.*?<\/>/g);
-	const projDescription = myText.match(/<description>.*?<\/>/g);
-	const projImages = myText.match(/<images>.*?<\/>/g);
+    const servizi = myText.match(/<servizi>.*?<servizi>/)[0].replaceAll('<servizi>','');
+    const nome_servizio = myText.match(/<nome_servizio>.*?<nome_servizio>/g);
+    const descriz_servizio = myText.match(/<descriz_servizio>.*?<descriz_servizio>/g);
+    const servizi_simili = myText.match(/<servizi_simili>.*?<servizi_simili>/g);
 
-	//console.log(myText);
-	//console.log(aboutText);
-	//console.log(projTitles);
-	//console.log(projYears);
-	//console.log(projCategories);
+    const about_1 = myText.match(/<about_1>.*?<about_1>/)[0].replaceAll('<about_1>','');
+    const about_2 = myText.match(/<about_2>.*?<about_2>/)[0].replaceAll('<about_2>','');
+    const about_3 = myText.match(/<about_3>.*?<about_3>/)[0].replaceAll('<about_3>','');
+
+	const chiSiamo = myText.match(/<chisiamo>.*?<chisiamo>/)[0].replaceAll('<chisiamo>','');
+	const chiSiamo_Gin = myText.match(/<chisiamo_Ginevra>.*?<chisiamo_Ginevra>/)[0].replaceAll('<chisiamo_Ginevra>','');
+	const chiSiamo_Hai = myText.match(/<chisiamo_Haiat>.*?<chisiamo_Haiat>/)[0].replaceAll('<chisiamo_Haiat>','');
+
+	const career = myText.match(/<career>.*?<career>/)[0].replaceAll('<career>','');
+	const nome_posizione = myText.match(/<nome_posizione>.*?<nome_posizione>/g);
+    const descriz_posizione = myText.match(/<descriz_posizione>.*?<descriz_posizione>/g);
 
     $(document).ready(function() {
-    	$('.about_text')[0].innerHTML = aboutText;
+    	$('#servizi > .text')[0].innerHTML = servizi;
+    	for (i=0; i<nome_servizio.length; i++){
+    		//console.log(nome_servizio[i], descriz_servizio[i], servizi_simili[i]);
+    		var servizi_simili_array = servizi_simili[i].replaceAll('<servizi_simili>','').split(',');
+
+    		$( "<div id='option_duo_"+i+"' class='option_duo'>"+
+				"<div class='button' alt='"+nome_servizio[i]+"' onclick='openThisButton(this)'>"+nome_servizio[i]+"</div>"+
+				"<div class='option_inside closed' alt='"+nome_servizio[i]+"'>"+
+					"<ul id='moreoptions_"+i+"' class='option_moreoptions'></ul>"+
+					"<div class='descript'>"+descriz_servizio[i]+"</div>"+
+				"</div>"+
+			"</div>" ).appendTo($('.option_buttons'));
+
+			for (j=0; j<servizi_simili_array.length; j++){
+	    		$( "<li>"+servizi_simili_array[j]+"</li>" ).appendTo($('#moreoptions_'+i));
+	    	};
+    	};
+
+    	$('.about > .multiple_texts > #text_1')[0].innerHTML = about_1;
+    	$('.about > .multiple_texts > #text_2')[0].innerHTML = about_2;
+    	$('.about > .multiple_texts > #text_3')[0].innerHTML = about_3;
+
+    	$('#chisiamo > .text')[0].innerHTML = chiSiamo;
+    	$('#chisiamo > .figure_frame > .frame_ginevra > .info')[0].innerHTML = chiSiamo_Gin;
+    	$('#chisiamo > .figure_frame > .frame_haiat > .info')[0].innerHTML = chiSiamo_Hai;
+
+    	$('#career > .left > .text')[0].innerHTML = career;
+    	$('#career > .right > .card > .top > .title')[0].innerHTML = nome_posizione[0].replaceAll('<nome_posizione>','');
+    	$('.right > .card > a.sendCareerMail')[0].href = "mailto:google@google.com?subject=candidatura-"+nome_posizione[0].replaceAll('<nome_posizione>','').replaceAll(' ','-');
+
+
+    	for (i=0; i<nome_posizione.length; i++){
+
+    		var nome_posizione_noTags = nome_posizione[i].replaceAll('<nome_posizione>','').replaceAll(' ','-');
+    		$( "<div id='descript_"+(i+1)+"' class='descript "+nome_posizione_noTags+"'>"+
+    			descriz_posizione[i].replaceAll('<descriz_posizione>','')+
+			"</div>" ).appendTo($('#career > .right > .card > .bottom'));
+
+    	};
     	
-    	for (i=0; i<projTitles.length; i++){
+    	/*for (i=0; i<projTitles.length; i++){
     		var images = projImages[i].replaceAll('<images>','').replaceAll('</>','').split(',');
 
     		$( "<div id='project_"+i+"' class='project_line'>"+
@@ -111,9 +152,9 @@
 				$(".lightbox > .lightbox_gallery").css("overflow", "scroll");
 			}, 400);
 			return
-		});
+		});*/
     });
-});*/
+});
 
 
 
@@ -166,6 +207,7 @@ function checkIfDescriptVisible() {
 	    	var itemNumber = key.replace('openJob-','');
 	    	var jobName = valueObj[0].classList[1].replace('titolo_','').replaceAll('-',' ');
 	    	$('.right > .card > .top > .title')[0].innerText = jobName;
+	    	$('.right > .card > a.sendCareerMail')[0].href = "mailto:google@google.com?subject=candidatura-"+jobName.replaceAll(' ','-');
 			openJobsSlider.forEach((el) => {el.classList.remove('active')});
 			openJobsSlider[itemNumber].classList.add('active');
 		}
@@ -173,6 +215,19 @@ function checkIfDescriptVisible() {
 }
 
 
+
+function openThisButton(e) {
+	var thisAlt = $(e).attr('alt');
+	var allOptions_inside = $('.option_inside');
+	var thisOption_inside = $('.option_inside[alt="'+thisAlt+'"]');
+
+	if(!$(thisOption_inside).hasClass('closed')){
+		thisOption_inside[0].classList.add('closed');
+	} else {
+		allOptions_inside.each(function(){this.classList.add('closed')});
+		thisOption_inside[0].classList.remove('closed');
+	}
+}
 
 $( document ).ready(function() {
 	//INTERACT WITH BUTTONS
@@ -206,12 +261,26 @@ function whichSectionIsVisible() {
 	    //console.log(window.innerHeight);
 	    //console.log(valueObj, $(valueObj)[0].getBoundingClientRect().top, $(valueObj)[0].getBoundingClientRect().bottom);
 	    if($(valueObj)[0].getBoundingClientRect().top < window.innerHeight && $(valueObj)[0].getBoundingClientRect().bottom >= 0 ) {
-	    	//console.log('yay!', $(valueObj)[0]);
 	    	var itemNumber = key.replace('sectionName-','');
 			allHeadersOptions.forEach((el) => {el.classList.remove('active')});
 			allHeadersOptions[itemNumber].classList.add('active');
 		}
 	});
+
+	//check if already changed to avoid multiple triggers
+	if($('div.left_text')[0].innerText != 'Digital Strategy Consulting'){
+		if($('div#servizi')[0].getBoundingClientRect().top < window.innerHeight && $('div#servizi')[0].getBoundingClientRect().bottom >= 0 ) {
+			//change logo
+			($('.logo_wrapper.desktop.first > figure > img').css('opacity','0'));
+
+			//change side text
+			($('div.left_text')).css('opacity','0');
+			setTimeout(() => {
+				($('div.left_text')[0]).innerText = 'Digital Strategy Consulting';
+				($('div.left_text')).css('opacity','1');
+			}, "400");
+		}
+	}
 }
 
 function showFrame(name) {
