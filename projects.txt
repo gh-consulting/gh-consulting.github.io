@@ -1,0 +1,59 @@
+<1. SERVIZI>
+<servizi>Ti guidiamo dal punto di partenza dei tuoi progetti digitali alla fase di lancio e consolidamento, affiancandoti nel raggiungimento degli obiettivi prefissati e nell'individuazione di quelli associati a una futura visione digitale. Il nostro obiettivo è quello di sostenerti nell'identificazione e nell'analisi della miglior strategia, trasformandola in tasks concrete da portare a termine. Il nostro costante aggiornamento sui trend tecnologici del momento e su quelli che andranno a saturare il panorama futuro, ci permette di indicarti i modelli e i piani di business utili per mantenerti al passo con ogni novità.<servizi>
+
+<nome_servizio>Media & Communication<nome_servizio>
+<descriz_servizio>Come mai prima d'ora, una strategia di comunicazione mirata in grado di entrare incontatto con il proprio target di riferimento è una condizione essenziale per costruire un brand unico e di successo. Posizionarsi strategicamente all'interno del proprio mercato di riferimento, trovare il proprio tono di voce e saperlo veicolare tramite la creazione di contenuti accattivanti, la scelta dei propri canali di comunicazione e l'individuare i testimonial in grado di valorizzare i propri prodotti e servizi sono gli elementi che ti permetteranno di distinguerti dalla massa e occupare uno spazio speciale nella mente delle persone.<descriz_servizio>
+<servizi_simili>Online and Offline Content & Media Creation,Social Media Marketing & Strategy,Blogging & Partership<servizi_simili>
+
+<nome_servizio>Digital Marketing<nome_servizio>
+<descriz_servizio>Quando le persone spendono gran parte della propria giornata su internet, non stupisce che è proprio sul digital che i più grandi player sviluppano la propria strategia di marketing. Il nostro obiettivo è creare una strategia digitale che ti permetta di rimanere attuale e competitivo nel mercato odierno sfruttando le possibilità offerte dal digitale. Ciò implica l'attivazione di una serie di tattiche che ti aiuteranno a impiegare i canali online per raggiungere e coinvolgere il proprio pubblico di destinazione, e per promuovere le vendite di un prodotto o servizio. Il marketing digitale include l'ottimizzazione per i motori di ricerca (SEO), il content marketing, il social media marketing, l'e-mail marketing, la pubblicità pay-per-click, display e altro ancora.<descriz_servizio>
+<servizi_simili>Paid Advertising,SEO strategy,Email Marketing,Influencer Marketing<servizi_simili>
+
+<nome_servizio>Web Design & Web development<nome_servizio>
+<descriz_servizio>Il sito web è la vetrina digitale più consultata dalle persone: è essenziale che questo riesca a stimolare il loro interesse e scegliere di approfondire la tua identità, servizi o prodotti vincendo la sempre più agguerrita competitzione. È quindi di massima rilevanza sviluppare il tuo spazio digitale in maniera strategica, che possa aiutarti a raggiungere i tuoi obiettivi di business. Il sito web aiuta a costruire una relazioni con le persone, oltre a generare lead e conversioni.<descriz_servizio>
+<servizi_simili>E-commerce strategy<servizi_simili>
+
+————————————————————
+
+<2. ABOUT>
+<about_1>G&H Digital Strategy Consulting offre consulenza strategica in <span class='pulse'>ambito digitale</span> per imprese di tutte le dimensioni che vogliono beneficiare delle <span class='pulse'>opportunità</span> offerte dal mondo digital.<about_1>
+
+<about_2>Combinando le <span class='pulse'>best practices</span> di marketing e IT, accompagniamo le aziende a raggiungere le proprie ambizioni tracciando <span class='pulse'>strategie personalizzate ad hoc</span> che permettono loro di sfruttare al massimo le opportunità tecnologiche e digitali e raggiungere i propri obiettivi di business.<about_2>
+
+<about_3>Il nostro approccio, che posiziona il cliente e i suoi obiettivi al centro, combina <span class='pulse'>innovazione e creatività</span>, per garantire un output di massima qualità.<about_3>
+
+————————————————————
+
+<4. CHI SIAMO>
+<chisiamo>Haiat e Ginevra hanno dato vita a G&H dopo una prima esperienza avuta insieme nella realizzazione di una startup operante nel settore del green finance. Appassionate del mondo della consulenza, hanno deciso di mettere in comune i propri background e le proprie competenze per offrire servizi di alta qualità. Ciò che contraddistingue Haiat e Ginevra dalla concorrenza è, oltre che la mente fresca e nata in un periodo in cui il cuore pulsante era la digitalizzazione e la trasformazione ad essa associata, la curiosità, la voglia di innovarsi e la precisione. Tutte qualità che Haiat e Ginevra trasmettono nei propri servizi offerti al cliente.<chisiamo>
+<chisiamo_Ginevra>Si laurea in Scienze della Comunicazione presso l'Alma Mater Studiorum di Bologna e frequenta il master in Marketing and Sales della Rome Business School. Durante la pandemia del Covid-19 aiuta aziende locali a delineare strategie di marketing e comunicazione che permettano loro di superare le difficoltà del periodo storico. Dopo brevi esperienze in azienda torna a operare come libera professionista affiancando imprenditori, micro e piccole imprese nel raggiungimento dei propri obiettivi. È appassionata di Startup, imprenditoria e innovazione.<chisiamo_Ginevra>
+<chisiamo_Haiat>Laureata magistrale in Ingegneria Industriale presso l'università LIUC - Università Cattaneo e frequentante dell'Executive Master in Project Management presso la Rome Business School. Frequenta il PhD in tematiche legate ad Artifical Intelligence. A questo si accumula un'esperienza lavorativa pluriennale, in cui ha rivestito principalmente il ruolo di Project Manager, operando all'interno di grandi realtà quali KPMG, Be Shaping The Future, Datwyler e interfacciandosi con realtà note come Intesa San Paolo, Unicredit, Prelios. La sua passione per l'innovazione l'ha portata a dar vita a una startup.<chisiamo_Haiat>
+
+————————————————————
+
+<5. CAREER>
+<career>G&H cerca risorse di alto profilo, che internalizzino i valori e il metodo di lavoro della società. Cerca risorse che abbiano una forte propensione alla curiosità e passione per tutto ciò che riguarda l'innovazione e la digitalizzazione. Guarda le posizioni aperte per saperne di più.<career>
+
+<nome_posizione>Senior Web Designer<nome_posizione>
+<descriz_posizione>Sei un web designer? Hai almeno vent'anni di esperienza? Candidati.<descriz_posizione>
+
+<nome_posizione>Commercialista<nome_posizione>
+<descriz_posizione>Cerchiamo un commercialista, un bravissimo commercialista.<descriz_posizione>
+
+<nome_posizione>HR Consultant<nome_posizione>
+<descriz_posizione>Vogliamo un HR Consultant, il migliore HR Consultant.<descriz_posizione>
+
+————————————————————
+
+<PROJECTS>
+<title>RILIEVO</>
+<year>2022</>
+<category>art catalogue</>
+<description><I>Rilievo - Osservazioni intorno alla Compagnia Mòra</I> is a visual narrative about the dance company Mòra, founded by Claudia Castellucci in 2019 and still active today. A relief of their world, a story made up of dialogues, critical texts, drawings and readings to recreate a picture of their creative action.</>
+<images>rilievo-01.jpg,rilievo-02.jpg,rilievo-03.jpg,rilievo-04.jpg,rilievo-05.jpg,rilievo-06.jpg,rilievo-07.jpg,rilievo-08.jpg,rilievo-09.jpg</>
+
+<title>SANTARCANGELO 50 FESTIVAL</>
+<year>2021</>
+<category>art catalogue</>
+<description>In the original novel Mafarka le Futuriste, the book as a sacred object, a repository for a new knowledge: its shape evokes an obelisk, a mysterious entity worthy of reverence.</>
+<images>img4.jpg,img3.jpg,img1.jpg,img2.jpg</>
