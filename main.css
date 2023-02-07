@@ -107,6 +107,11 @@ body{
 	transform: rotate(-90deg) translate(-50%, 100%);
 	transition: opacity .4s;
 }
+.left_text.before_change:before {
+	content: url("data:image/svg+xml,%3Csvg id='Livello_1' data-name='Livello 1' xmlns='http://www.w3.org/2000/svg' width='33.03' height='10.35' viewBox='0 0 33.03 10.35'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none%3B stroke: %231d1d1b%3B stroke-miterlimit: 10%3B %7D %3C/style%3E%3C/defs%3E%3Cline class='cls-1' x1='0.29' y1='5.18' x2='33.03' y2='5.18'/%3E%3Cline class='cls-1' x1='0.29' y1='5.19' x2='7.03' y2='0.41'/%3E%3Cline class='cls-1' x1='0.29' y1='5.15' x2='7.03' y2='9.94'/%3E%3C/svg%3E");
+	right: 6em;
+	position: absolute;
+}
 
 header {
 	z-index: 2;
@@ -297,14 +302,108 @@ div.section.chisiamo {
 	padding-top: 14%!important;
 }
 
-div.main > .intro > .title {
+div.main > .intro > .title,
+div.main > .intro > .title > span,
+div.main > .intro > .title #scroll-text {
 	font-size: var(--fontSizeXL);
 }
+div.main > .intro > .title #scroll-container {
+	display: inline-block;
+	position: absolute;
+}
+div.main > .intro > .title #scroll-container.first {
+	top: -.8rem;
+}
+div.main > .intro > .title #scroll-container.second {
+	top: 4.4rem;
+}
+div.main > .intro > .title #scroll-container.third {
+	top: 9.5rem;
+}
+div.main > .intro > .title #scroll-container.fourth {
+	top: 14.6rem;
+}
+
+#scroll-container {
+  /*border: 3px solid black;*/
+  border-radius: 5px;
+  overflow: hidden;
+  height: 6.4rem;
+	vertical-align: middle;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  
+  -moz-animation: my-animation 10s ease-in-out infinite;
+  -webkit-animation: my-animation 10s ease-in-out infinite;
+  animation: my-animation 10s ease-in-out infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+	/*77,37,3 — .15, 2.05, 4.25*/
+  /*from {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  to {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }*/
+  0% {
+  	-moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  10%,30% { /*23*/
+  	-moz-transform: translateY(-77%);
+    -webkit-transform: translateY(-77%);
+    transform: translateY(-77%);
+  }
+  40%,60% { /*40*/
+  	-moz-transform: translateY(-37%);
+    -webkit-transform: translateY(-37%);
+    transform: translateY(-37%);
+  }
+  70%,90% { /*34*/
+  	-moz-transform: translateY(3%);
+    -webkit-transform: translateY(3%);
+    transform: translateY(3%);
+  }
+  100% { /*???*/
+  	-moz-transform: translateY(43%);
+    -webkit-transform: translateY(43%);
+    transform: translateY(43%);
+  }
+}
+
+
+
 div.section .title {
 	font-family: Gangster;
 	font-size: var(--fontSizeL);
 	margin-block-end: 60px;
 	line-height: 110%;
+}
+div.main > .intro > .title * {
+	font-family: Gangster;
 }
 div.section > .text {
 	font-size: var(--fontSizeM);
@@ -440,7 +539,7 @@ div.section > .text {
 	display: flex;
 	gap: 10px;
 	position: absolute;
-	bottom: 6%;
+	bottom: 12%;
 }
 .section.about > .multiple_texts_slider > a {
 	display: inline-flex;
@@ -607,6 +706,7 @@ div.section.career .bottom {
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
+	margin-bottom: 2em;
 }
 div.section.career .bottom > .descript {
 	font-size: var(--fontSizeS);
@@ -709,7 +809,8 @@ footer > .left > p:first-child {
 		padding: 10%;
 		padding-top: 80px!important;
 	}
-	div.main > .intro > .title {
+	div.main > .intro > .title,
+	div.main > .intro > .title > span {
 		font-size: var(--fontSizeL);
 	}
 	div.section .title {
