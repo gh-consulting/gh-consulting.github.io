@@ -277,6 +277,7 @@ function whichSectionIsVisible() {
 			($('div.left_text')).css('opacity','0');
 			setTimeout(() => {
 				($('div.left_text')[0]).innerText = 'Digital Strategy Consulting';
+				($('div.left_text')[0]).classList.remove('before_change');
 				($('div.left_text')).css('opacity','1');
 			}, "400");
 		}
