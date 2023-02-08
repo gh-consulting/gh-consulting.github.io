@@ -294,3 +294,34 @@ function hideFrame(name) {
 	name = name.classList[0].replace('dot_','');
 	$('.frame_'+name).css('display','none');
 }
+
+var texts_1 = new Array();
+texts_1.push("design strategies", "drive projects", "catch opportunities");
+var texts_2 = new Array();
+texts_2.push("brands", "companies", "businesses");
+var texts_3 = new Array();
+texts_3.push("win", "achieve goals", "level up");
+var texts_4 = new Array();
+texts_4.push("a digital world", "digital times", "the digital landscape");
+var point = 0;
+//timeSkip = half the interval in milliseconds
+var timeSkip = 2500;
+var animationCounter = 1;
+
+function changeText(){
+  $('.main > .intro > .title > .pulse.first').html(texts_1[point]);
+  $('.main > .intro > .title > .pulse.second').html(texts_2[point]);
+  $('.main > .intro > .title > .pulse.third').html(texts_3[point]);
+  $('.main > .intro > .title > .pulse.fourth').html(texts_4[point]);
+  animationCounter ++;
+  if (animationCounter % 2 === 0) {
+  	if(point < ( texts_1.length - 1 ) ){
+		point++;
+	} else {
+		point = 0;
+	}
+}
+}
+ 
+setInterval(changeText, timeSkip); /*Call it here*/
+changeText();
