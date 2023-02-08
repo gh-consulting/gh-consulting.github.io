@@ -394,6 +394,32 @@ div.main > .intro > .title #scroll-container.fourth {
   }
 }
 
+/*_____*/
+div.main > .intro > .title > .pulse {
+	font-size: var(--fontSizeXL);
+	display: inline-block;
+	color: var(--lightblue);
+
+  animation-name: changeColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0%, 40%, 60%, 100% {
+  	-moz-color: var(--lightblue);
+    -webkit-color: var(--lightblue);
+    color: var(--lightblue);
+  }
+
+  50% {
+  	-moz-color: white;
+    -webkit-color: white;
+    color: white;
+  }
+}
+
+
 
 
 div.section .title {
@@ -408,6 +434,10 @@ div.main > .intro > .title * {
 div.section > .text {
 	font-size: var(--fontSizeM);
 	margin-block-end: 60px;
+}
+div.section > .text > b {
+	font-size: var(--fontSizeM);
+	font-weight: bolder;
 }
 
 .option_buttons {
@@ -813,9 +843,13 @@ footer > .left > p:first-child {
 	div.main > .intro > .title > span {
 		font-size: var(--fontSizeL);
 	}
+
 	div.section .title {
 		font-weight: 600;
 	}
+
+
+
 
 	/*SERVIZI*/
 	.option_buttons,
