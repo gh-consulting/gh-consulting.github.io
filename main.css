@@ -395,7 +395,7 @@ div.main > .intro > .title #scroll-container.fourth {
 }
 
 /*_____*/
-div.main > .intro > .title > .pulse {
+/*div.main > .intro > .title > .pulse {
 	font-size: var(--fontSizeXL);
 	display: inline-block;
 	color: var(--lightblue);
@@ -403,6 +403,16 @@ div.main > .intro > .title > .pulse {
   animation-name: changeColor;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+}
+
+div.main > .intro > .title > .pulse.second {
+  animation-delay: 1s;
+}
+div.main > .intro > .title > .pulse.third {
+  animation-delay: 100s;
+}
+div.main > .intro > .title > .pulse.fourth {
+  animation-delay: 100s;
 }
 
 @keyframes changeColor {
@@ -417,8 +427,12 @@ div.main > .intro > .title > .pulse {
     -webkit-color: white;
     color: white;
   }
+}*/
+div.main > .intro > .title > .pulse {
+	font-size: var(--fontSizeXL);
+	display: inline-block;
+	color: var(--lightblue);
 }
-
 
 
 
