@@ -245,7 +245,52 @@ $( document ).ready(function() {
 			}
 	  	});
 	});
-	
+
+	var text_1 = ["design strategies", "drive projects", "catch opportunities"];
+	var text_2 = ["brands", "companies", "businesses"];
+	var text_3 = ["win", "achieve goals", "level up"];
+	var text_4 = ["a digital world", "digital times", "the digital landscape"];
+	var elem_1 = $('.main > .intro > .title > .pulse.first');
+	var elem_2 = $('.main > .intro > .title > .pulse.second');
+	var elem_3 = $('.main > .intro > .title > .pulse.third');
+	var elem_4 = $('.main > .intro > .title > .pulse.fourth');
+	var counter = 0;
+	var animationIterations = 0;
+
+	function change_1() {
+
+		if (animationIterations % 5 == 0) {
+			elem_1.fadeOut(function(){
+		        elem_1.html(text_1[counter]);
+		        counter++;
+		        if(counter >= text_1.length) { counter = 0; }
+		        elem_1.fadeIn();
+		    });
+		}
+
+		if ((animationIterations - 1) % 5 == 0) {
+			elem_2.fadeOut(function(){
+			    elem_2.html(text_2[counter]);
+			    elem_2.fadeIn();
+			});
+		}
+		if ((animationIterations - 2) % 5 == 0) {
+			elem_3.fadeOut(function(){
+			    elem_3.html(text_3[counter]);
+			    elem_3.fadeIn();
+			});
+		}
+		if ((animationIterations - 3) % 5 == 0) {
+			elem_4.fadeOut(function(){
+			    elem_4.html(text_4[counter]);
+			    elem_4.fadeIn();
+			});
+		}
+
+	    animationIterations++;
+	}
+
+	setInterval(change_1, 1000);
 });
 
 function whichSectionIsVisible() {
@@ -295,33 +340,61 @@ function hideFrame(name) {
 	$('.frame_'+name).css('display','none');
 }
 
-var texts_1 = new Array();
-texts_1.push("design strategies", "drive projects", "catch opportunities");
+
+
+/*var texts_1 = new Array();
 var texts_2 = new Array();
-texts_2.push("brands", "companies", "businesses");
 var texts_3 = new Array();
-texts_3.push("win", "achieve goals", "level up");
 var texts_4 = new Array();
+texts_1.push("design strategies", "drive projects", "catch opportunities");
+texts_2.push("brands", "companies", "businesses");
+texts_3.push("win", "achieve goals", "level up");
 texts_4.push("a digital world", "digital times", "the digital landscape");
 var point = 0;
-//timeSkip = half the interval in milliseconds
-var timeSkip = 2500;
+var point_2 = 0;
+var timeSkip = 500;
+var totalTimeSkip = 0;
+var totalTimeSkip_2 = 0;
 var animationCounter = 1;
+var animationCounter_2 = 1;
 
 function changeText(){
-  $('.main > .intro > .title > .pulse.first').html(texts_1[point]);
-  $('.main > .intro > .title > .pulse.second').html(texts_2[point]);
-  $('.main > .intro > .title > .pulse.third').html(texts_3[point]);
-  $('.main > .intro > .title > .pulse.fourth').html(texts_4[point]);
-  animationCounter ++;
-  if (animationCounter % 2 === 0) {
-  	if(point < ( texts_1.length - 1 ) ){
-		point++;
-	} else {
-		point = 0;
+	if ((totalTimeSkip % 2500 === 0)&&(animationCounter % 2 === 0)) {
+		$('.main > .intro > .title > .pulse.first').html(texts_1[point]);
+		//totalTimeSkip = 0;
 	}
-}
+	if (((totalTimeSkip-1000) % 2500 === 0)&&(animationCounter % 2 === 0)) {
+		$('.main > .intro > .title > .pulse.second').html(texts_2[point]);
+		//totalTimeSkip_2 = 0;
+	}
+
+	//$('.main > .intro > .title > .pulse.second').html(texts_2[point]);
+	//$('.main > .intro > .title > .pulse.third').html(texts_3[point]);
+	//$('.main > .intro > .title > .pulse.fourth').html(texts_4[point]);
+	animationCounter ++;
+	animationCounter_2 ++;
+	console.log(animationCounter, animationCounter_2);
+	
+	if ((animationCounter-1) % 2 === 0) {
+	  	if(point < ( texts_1.length - 1 ) ){
+			point++;
+		} else {
+			point = 0;
+		}
+	}
+
+	if ((animationCounter_2-1) % 2 === 0) {
+		console.log('change');
+	  	if(point_2 < ( texts_2.length - 1 ) ){
+			point_2++;
+		} else {
+			point_2 = 0;
+		}
+	}
+	
+	totalTimeSkip += timeSkip;
+	totalTimeSkip_2 += timeSkip;
 }
  
-setInterval(changeText, timeSkip); /*Call it here*/
-changeText();
+setInterval(changeText, timeSkip);
+changeText();*/
