@@ -44,16 +44,3 @@
 <descriz_posizione>Vogliamo un HR Consultant, il migliore HR Consultant.<descriz_posizione>
 
 ————————————————————
-
-<PROJECTS>
-<title>RILIEVO</>
-<year>2022</>
-<category>art catalogue</>
-<description><I>Rilievo - Osservazioni intorno alla Compagnia Mòra</I> is a visual narrative about the dance company Mòra, founded by Claudia Castellucci in 2019 and still active today. A relief of their world, a story made up of dialogues, critical texts, drawings and readings to recreate a picture of their creative action.</>
-<images>rilievo-01.jpg,rilievo-02.jpg,rilievo-03.jpg,rilievo-04.jpg,rilievo-05.jpg,rilievo-06.jpg,rilievo-07.jpg,rilievo-08.jpg,rilievo-09.jpg</>
-
-<title>SANTARCANGELO 50 FESTIVAL</>
-<year>2021</>
-<category>art catalogue</>
-<description>In the original novel Mafarka le Futuriste, the book as a sacred object, a repository for a new knowledge: its shape evokes an obelisk, a mysterious entity worthy of reverence.</>
-<images>img4.jpg,img3.jpg,img1.jpg,img2.jpg</>
