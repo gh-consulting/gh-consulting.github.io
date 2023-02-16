@@ -63,6 +63,7 @@
 	--fontSizeXL: 70px;
 	--blue: rgb(40,110,190);
 	--lightblue: rgb(70,160,250);
+	--green: rgb(30,185,30);
 	--margin: 20px;
 }
 
@@ -298,7 +299,8 @@ div.section.about {
 	margin-bottom: 6em;
 }
 div.section.servizi,
-div.section.chisiamo {
+div.section.chisiamo,
+div.section.about {
 	padding-top: 14%!important;
 }
 
@@ -583,7 +585,7 @@ div.section > .text > b {
 	display: flex;
 	gap: 10px;
 	position: absolute;
-	bottom: 12%;
+	bottom: 10%;
 }
 .section.about > .multiple_texts_slider > a {
 	display: inline-flex;
@@ -790,12 +792,58 @@ div.section.contattaci > .buttons > a {
 	width: 80px;
 	color: white;
 }
+div.section.contattaci > .buttons > a > svg circle {
+	fill: white;
+	stroke: black;
+	stroke-width: 3px;
+	/*transition: .4s fill, .4s stroke-width;*/
+}
+div.section.contattaci > .buttons > a > svg.mail path {
+	fill: black;
+	/*transition: .4s fill;*/
+}
+div.section.contattaci > .buttons > a > svg.mail:hover circle {
+	fill: var(--lightblue);
+	stroke: var(--lightblue);
+}
+div.section.contattaci > .buttons > a > svg.mail:hover path {
+	fill: white;
+}
+
+div.section.contattaci > .buttons > a > svg.phone path {
+	stroke: black;
+	fill: none;
+	stroke-width: 2.8px;
+	/*transition: .4s stroke;*/
+}
+div.section.contattaci > .buttons > a > svg.phone:hover circle {
+	fill: var(--blue);
+	stroke: var(--blue);
+}
+div.section.contattaci > .buttons > a > svg.phone:hover path {
+	stroke: white;
+}
+
+div.section.contattaci > .buttons > a > svg.whatsapp path {
+	stroke-width: 2.8px;
+	stroke: black;
+	fill: white;
+	/*transition: .4s fill;*/
+}
+div.section.contattaci > .buttons > a > svg.whatsapp:hover path:first-child {
+	stroke: var(--green);
+	fill: var(--green);
+}
+div.section.contattaci > .buttons > a > svg.whatsapp:hover path:last-child {
+	stroke: white;
+	fill: var(--green);
+}
 div.section.contattaci .buttons {
 	height: 80px;
 }
 
 
-footer {
+/*footer {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -804,6 +852,47 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+footer p {
+	font-weight: 400;
+}
+footer > .left > p:first-child {
+	text-decoration: underline;
+}*/
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 70%;
+}
+footer > .top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+footer > .top a {
+	text-decoration: none;
+}
+footer > .top .footer_title,
+footer > .bottom * {
+	font-size: var(--fontSizeS);
+}
+footer > .top .icons {
+	height: 3em;
+}
+footer > .top .icons svg {
+	height: 100%;
+}
+footer > .top ul {
+	list-style: none;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	margin-top: 4px;
+}
+footer > .top ul * {
+	font-size: 12px;
 }
 footer p {
 	font-weight: 400;
