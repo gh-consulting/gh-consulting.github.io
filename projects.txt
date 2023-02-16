@@ -32,7 +32,7 @@
 ————————————————————
 
 <5. CAREER>
-<career>G&H cerca risorse di alto profilo, che internalizzino i valori e il metodo di lavoro della società. Cerca risorse che abbiano una forte propensione alla curiosità e passione per tutto ciò che riguarda l'innovazione e la digitalizzazione. Guarda le posizioni aperte per saperne di più.<career>
+<career>G&H accoglie persone dedite e appassionate che ambiscono ad avanzare nella propria carriera apportando il proprio contributo significativo in ambiziosi progetti all'interno di team human-sized. G&H porta avanti una cultura inclusiva e meritocratica, a garanzia del benessere di ogni singola persona all'interno della società. Unisciti a G&H per creare grandi cose insieme.<career>
 
 <nome_posizione>Senior Web Designer<nome_posizione>
 <descriz_posizione>Sei un web designer? Hai almeno vent'anni di esperienza? Candidati.<descriz_posizione>
