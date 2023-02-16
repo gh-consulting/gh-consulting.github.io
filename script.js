@@ -255,11 +255,12 @@ $( document ).ready(function() {
 	var elem_3 = $('.main > .intro > .title > .pulse.third');
 	var elem_4 = $('.main > .intro > .title > .pulse.fourth');
 	var counter = 0;
+	var wait = 10;
 	var animationIterations = 0;
 
 	function change_1() {
 
-		if (animationIterations % 5 == 0) {
+		if (animationIterations % wait == 0) {
 			elem_1.fadeOut(function(){
 		        elem_1.html(text_1[counter]);
 		        counter++;
@@ -268,19 +269,19 @@ $( document ).ready(function() {
 		    });
 		}
 
-		if ((animationIterations - 1) % 5 == 0) {
+		if ((animationIterations - 1) % wait == 0) {
 			elem_2.fadeOut(function(){
 			    elem_2.html(text_2[counter]);
 			    elem_2.fadeIn();
 			});
 		}
-		if ((animationIterations - 2) % 5 == 0) {
+		if ((animationIterations - 2) % wait == 0) {
 			elem_3.fadeOut(function(){
 			    elem_3.html(text_3[counter]);
 			    elem_3.fadeIn();
 			});
 		}
-		if ((animationIterations - 3) % 5 == 0) {
+		if ((animationIterations - 3) % wait == 0) {
 			elem_4.fadeOut(function(){
 			    elem_4.html(text_4[counter]);
 			    elem_4.fadeIn();
@@ -290,7 +291,7 @@ $( document ).ready(function() {
 	    animationIterations++;
 	}
 
-	setInterval(change_1, 1000);
+	setInterval(change_1, 500);
 });
 
 function whichSectionIsVisible() {
