@@ -842,6 +842,33 @@ div.section.contattaci .buttons {
 	height: 80px;
 }
 
+footer svg.instagram .st0,
+footer svg.instagram .st1 {
+	fill: white;
+	stroke: black;
+}
+footer svg.linkedin .st0,
+footer svg.linkedin .st1 {
+	fill: none;
+	stroke: black;
+}
+footer svg.instagram:hover .st0 {
+	fill: url(#ig_gradient);
+	stroke: url(#ig_gradient);
+}
+footer svg.instagram:hover .st1 {
+	fill: white;
+	stroke: url(#ig_gradient);
+}
+footer svg.linkedin:hover .st0 {
+	fill: white;
+	stroke: #0072b1;
+}
+footer svg.linkedin:hover .st1 {
+	fill: #0072b1;
+	stroke: #0072b1;
+}
+
 
 /*footer {
 	position: absolute;
