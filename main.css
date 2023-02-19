@@ -447,7 +447,8 @@ div.section .title {
 div.main > .intro > .title * {
 	font-family: Gangster;
 }
-div.section > .text {
+div.section > .text,
+div.section > .text > span {
 	font-size: var(--fontSizeM);
 	margin-block-end: 60px;
 }
@@ -564,7 +565,8 @@ div.section > .text > b {
   position: relative;
   margin: 0;
 }
-.section.about > .multiple_texts > .text > span {
+.section.about > .multiple_texts > .text > span,
+.section.servizi > .text > span {
   -webkit-animation: pulsate 3s ease-out;
   -webkit-animation-iteration-count: infinite; 
 }
@@ -1074,7 +1076,10 @@ footer > .left > p:first-child {
 
 	/*ABOUT*/
 	.section.about > .multiple_texts {
-		height: 100%;
+		height: auto;
+	}
+	.section.about > .multiple_texts_slider {
+
 	}
 
 	/*CAREER*/
@@ -1088,14 +1093,19 @@ footer > .left > p:first-child {
 	}
 
 	footer {
-		position: absolute;
+		/*position: absolute;
 		left: 0;
 		padding: 5%;
 		padding-bottom: 0;
 		bottom: 0;
 		transform: none;
 		width: 100%;
-		flex-direction: column;
+		flex-direction: column;*/
+		left: unset;
+		transform: none;
+		position: relative;
+		margin-top: 20%;
+		width: 100%;
 	}
 	footer p {
 		font-size: var(--fontSizeM);
