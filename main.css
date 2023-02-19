@@ -1079,7 +1079,9 @@ footer > .left > p:first-child {
 		height: auto;
 	}
 	.section.about > .multiple_texts_slider {
-
+		margin-block-start: 0;
+		margin-top: 40px;
+    position: unset;
 	}
 
 	/*CAREER*/
@@ -1093,19 +1095,20 @@ footer > .left > p:first-child {
 	}
 
 	footer {
-		/*position: absolute;
+		position: absolute;
 		left: 0;
 		padding: 5%;
 		padding-bottom: 0;
 		bottom: 0;
 		transform: none;
 		width: 100%;
-		flex-direction: column;*/
-		left: unset;
+		flex-direction: column;
+		/*left: unset;
 		transform: none;
 		position: relative;
 		margin-top: 20%;
-		width: 100%;
+		width: 100%;*/
+
 	}
 	footer p {
 		font-size: var(--fontSizeM);
