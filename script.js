@@ -47,7 +47,7 @@ jQuery.get('projects.txt', function(data) {
 
     	$('#career > .left > .text')[0].innerHTML = career;
     	$('#career > .right > .card > .top > .title')[0].innerHTML = nome_posizione[0].replaceAll('<nome_posizione>','');
-    	$('.right > .card > a.sendCareerMail')[0].href = "mailto:google@google.com?subject=candidatura-"+nome_posizione[0].replaceAll('<nome_posizione>','').replaceAll(' ','-');
+    	$('.right > .card > a.sendCareerMail')[0].href = "mailto:g.francisconi@ghdigitalconsulting.com,h.perozzo@ghdigitalconsulting.com?subject=candidatura-"+nome_posizione[0].replaceAll('<nome_posizione>','').replaceAll(' ','-');
 
 
     	for (i=0; i<nome_posizione.length; i++){
@@ -207,7 +207,7 @@ function checkIfDescriptVisible() {
 	    	var itemNumber = key.replace('openJob-','');
 	    	var jobName = valueObj[0].classList[1].replace('titolo_','').replaceAll('-',' ');
 	    	$('.right > .card > .top > .title')[0].innerText = jobName;
-	    	$('.right > .card > a.sendCareerMail')[0].href = "mailto:google@google.com?subject=candidatura-"+jobName.replaceAll(' ','-');
+	    	$('.right > .card > a.sendCareerMail')[0].href = "mailto:g.francisconi@ghdigitalconsulting.com,h.perozzo@ghdigitalconsulting.com?subject=candidatura-"+jobName.replaceAll(' ','-');
 			openJobsSlider.forEach((el) => {el.classList.remove('active')});
 			openJobsSlider[itemNumber].classList.add('active');
 		}
