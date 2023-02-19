@@ -920,6 +920,10 @@ footer > .top ul {
 }
 footer > .top ul * {
 	font-size: 12px;
+	transition: color .4s;
+}
+footer > .top ul li:hover {
+	color: var(--lightblue);
 }
 footer p {
 	font-weight: 400;
@@ -933,12 +937,27 @@ footer > .left > p:first-child {
 /*############*/
 /*QUERY MOBILE*/
 /*############*/
+@media screen and (max-width: 960px) {
+	:root {
+		--fontSizeXL: 52px;
+	}
+	div.section.career > .right {
+		width: 40%;
+	}
+}
+
+
+
+/*############*/
+/*QUERY MOBILE*/
+/*############*/
 @media screen and (max-width: 768px) {
 	:root {
 		--fontSizeXS: 13px;
 		--fontSizeS: 14px;
 		--fontSizeM: 20px;
-		--fontSizeL: 30px;
+		--fontSizeL: 25px;
+		--fontSizeXL: 25px;
 		/*--margin: 20px;*/
 	}
 
@@ -966,7 +985,7 @@ footer > .left > p:first-child {
 	}
 
 	div.main > div.section {
-		padding: 10%;
+		padding: 5%!important;
 		padding-top: 80px!important;
 	}
 	div.main > .intro > .title,
@@ -976,6 +995,13 @@ footer > .left > p:first-child {
 
 	div.section .title {
 		font-weight: 600;
+		width: 100%;
+	}
+	div.section.intro > .title {
+		width: 90%;
+	}
+	div.main > div.section {
+		width: 100%;
 	}
 
 
@@ -988,6 +1014,7 @@ footer > .left > p:first-child {
 	}
 	div.section.career > .right {
 		margin-block-end: 30%;
+		width: 100%;
 	}
 	.option_buttons > .option_duo > .option_inside {
 		flex-direction: column;
@@ -1057,12 +1084,15 @@ footer > .left > p:first-child {
 
 	/*CONTATTI*/
 	div.section.contattaci > .buttons {
-		max-width: 60%;
+		max-width: 70%;
 	}
 
 	footer {
-		position: relative;
+		position: absolute;
 		left: 0;
+		padding: 5%;
+		padding-bottom: 0;
+		bottom: 0;
 		transform: none;
 		width: 100%;
 		flex-direction: column;
@@ -1072,6 +1102,9 @@ footer > .left > p:first-child {
 		text-align: center;
 		font-weight: 100;
 		line-height: 110%;
+	}
+	footer > .top > div {
+		width: 100%;
 	}
 	footer > .right > p:first-child {
 		margin: 0;
