@@ -920,9 +920,18 @@ footer > .top ul {
 	margin: 0;
 	margin-top: 4px;
 }
-footer > .top ul * {
+footer > .top ul *,
+footer .credits, footer .credits * {
 	font-size: 12px;
 	transition: color .4s;
+}
+footer .credits, footer .credits * {
+	color: rgb(140,140,140);
+}
+footer .credits {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1em;
 }
 footer > .top ul li:hover {
 	color: var(--lightblue);
