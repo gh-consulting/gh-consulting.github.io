@@ -1,5 +1,8 @@
+<br> = A CAPO
+<span class='pulse'>TETO PULSANTE IN BLU</span>
+
 <1. SERVIZI>
-<servizi>Il nostro <span class='pulse'>metodo</span> è analitico, esecutivo e visionario.<br>Il nostro <span class='pulse'>obiettivo</span> è rendere concrete le tue ambizioni.<br>Il nostro <span class='pulse'>approccio</span> è integrato, polisettoriale e innovativo.<servizi>
+<servizi>Il nostro <span class='pulse'>metodo</span> è analitico, esecutivo e visionario.<br>Il nostro <span class='pulse'>obiettivo</span> è rendere concrete le tue ambizioni.<br>Il nostro <span class='pulse'>approccio</span> è integrato, polisettoriale e innovativo!<servizi>
 
 <nome_servizio>Media & Communication<nome_servizio>
 <descriz_servizio>Come mai prima d'ora, una strategia di comunicazione mirata in grado di entrare incontatto con il proprio target di riferimento è una condizione essenziale per costruire un brand unico e di successo. Posizionarsi strategicamente all'interno del proprio mercato di riferimento, trovare il proprio tono di voce e saperlo veicolare tramite la creazione di contenuti accattivanti, la scelta dei propri canali di comunicazione e l'individuare i testimonial in grado di valorizzare i propri prodotti e servizi sono gli elementi che ti permetteranno di distinguerti dalla massa e occupare uno spazio speciale nella mente delle persone.<descriz_servizio>
