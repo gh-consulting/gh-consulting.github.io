@@ -2,7 +2,7 @@
 <span class='pulse'>TESTO PULSANTE IN BLU</span>
 
 <1. SERVIZI>
-<servizi>Il nostro <span class='pulse'>metodo</span> è analitico, esecutivo e visionario.<br>Il nostro <span class='pulse'>obiettivo</span> è rendere concrete le tue ambizioni.<br>Il nostro <span class='pulse'>approccio</span> è integrato, polisettoriale e innovativo!<servizi>
+<servizi>Il nostro <span class='pulse'>metodo</span> è analitico, esecutivo e visionario.<br>Il nostro <span class='pulse'>obiettivo</span> è rendere concrete le tue ambizioni.<br>Il nostro <span class='pulse'>approccio</span> è integrato, polisettoriale e innovativo.<servizi>
 
 <nome_servizio>Media & Communication<nome_servizio>
 <descriz_servizio>Come mai prima d'ora, una strategia di comunicazione mirata in grado di entrare incontatto con il proprio target di riferimento è una condizione essenziale per costruire un brand unico e di successo. Posizionarsi strategicamente all'interno del proprio mercato di riferimento, trovare il proprio tono di voce e saperlo veicolare tramite la creazione di contenuti accattivanti, la scelta dei propri canali di comunicazione e l'individuare i testimonial in grado di valorizzare i propri prodotti e servizi sono gli elementi che ti permetteranno di distinguerti dalla massa e occupare uno spazio speciale nella mente delle persone.<descriz_servizio>
@@ -16,9 +16,13 @@
 <descriz_servizio>Il sito web è la vetrina digitale più consultata dalle persone: è essenziale che questo riesca a stimolare il loro interesse e scegliere di approfondire la tua identità, servizi o prodotti vincendo la sempre più agguerrita competitzione. È quindi di massima rilevanza sviluppare il tuo spazio digitale in maniera strategica, che possa aiutarti a raggiungere i tuoi obiettivi di business. Il sito web aiuta a costruire una relazioni con le persone, oltre a generare lead e conversioni.<descriz_servizio>
 <servizi_simili>E-commerce strategy<servizi_simili>
 
-<nome_servizio>1<nome_servizio>
-<descriz_servizio>Descrizione...<descriz_servizio>
-<servizi_simili>Servizio 1,Servizio 2<servizi_simili>
+<nome_servizio>Branding<nome_servizio>
+<descriz_servizio>Che tu offra un prodotto o un servizio, nella mente delle persone non sei solo quello, ma un complesso insieme di sensazioni, associazioni e percezioni che permettono loro di distinguerti dagli altri competitors e reputarti adatto o meno al bisogno che hanno bisogno di soddisfare. Il brand building ti permette di controllare quanto più possibile il mix di percezioni che vuoi che i tuoi clienti abbiano di te.<descriz_servizio>
+<servizi_simili>Brand building,Rebranding<servizi_simili>
+
+<nome_servizio>Go-to-market & launch<nome_servizio>
+<descriz_servizio>Che tu offra un prodotto o un servizio, nella mente delle persone non sei solo quello, ma un complesso insieme di sensazioni, associazioni e percezioni che permettono loro di distinguerti dagli altri competitors e reputarti adatto o meno al bisogno che hanno bisogno di soddisfare. Il brand building ti permette di controllare quanto più possibile il mix di percezioni che vuoi che i tuoi clienti abbiano di te.<descriz_servizio>
+<servizi_simili>Brand building,Rebranding<servizi_simili>
 
 ————————————————————
 
