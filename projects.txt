@@ -21,8 +21,27 @@
 <servizi_simili>Brand building,Rebranding<servizi_simili>
 
 <nome_servizio>Go-to-market & launch<nome_servizio>
-<descriz_servizio>Che tu offra un prodotto o un servizio, nella mente delle persone non sei solo quello, ma un complesso insieme di sensazioni, associazioni e percezioni che permettono loro di distinguerti dagli altri competitors e reputarti adatto o meno al bisogno che hanno bisogno di soddisfare. Il brand building ti permette di controllare quanto più possibile il mix di percezioni che vuoi che i tuoi clienti abbiano di te.<descriz_servizio>
-<servizi_simili>Brand building,Rebranding<servizi_simili>
+<descriz_servizio>Ti supportiamo nello sviluppo della strategia più efficiente per lanciare sul mercato un nuovo prodotto o un servizio che tenga conto del mercato di riferimento, dei competitors e dei bisogni del pubblico di destinazione.<descriz_servizio>
+<servizi_simili>Product and packaging design,Marketing strategy<servizi_simili>
+
+<nome_servizio>Data analysis & Data management<nome_servizio>
+<descriz_servizio>I dati sono uno dei più grandi patrimoni per un'impresa. Per questo G&H intende generare un reale valore economico dal patrimonio informativo presente nelle imprese, sia a partire dai dati interni sia esterni. Per farlo, G&H utilizza soluzioni strategiche che permettono sia di importare l'architettura e ottimizzare gli asset tecnologici, sia di revisionare i processi di gestione dei dati stessi.<descriz_servizio>
+<servizi_simili>Business analysis,Data visualization,Dashboard design<servizi_simili>
+
+<nome_servizio>Digital strategy consulting<nome_servizio>
+<descriz_servizio>La transizione digitale è una delle sfide più grandi affrontate sale imprese. Per questo l'obiettivo di G&H è quello di mettere la nostra consulenza strategica a disposizione del cliente nella definizione del giusto processo e delle corrette priorità, con il fine ultimo di agevolare concretamente la digitalizzazione dei processi e dei modelli di business.
+Un team di consulenti con eserienza in strategie digitali, esperti di IT offrirà il miglior supporto ai nostri clientii in tutte le fasi di valutazione, di design delle strategie, fino alla realizzazione e messa a terra delle soluzioni individuate.<descriz_servizio>
+<servizi_simili>Digital transformation models, Digital benchmarking, Voice & Podcast strategy<servizi_simili>
+
+<nome_servizio>Cyber & strategic consulting<nome_servizio>
+<descriz_servizio>La trasformazione digitale che stiamo vivendo porta ad incrementare l'importanza dei dati soprattutto all'interno delle realtà aziendali. Questo offre ai malintenzionati maggiori opportunità. Proprio per questo G&H mette a disposizione le proprie competenze per lo sviluppo e implementazione di strategie su misura per la sicurezza informatica.<descriz_servizio>
+
+<nome_servizio>Core business operations<nome_servizio>
+<descriz_servizio>La gestione delle informazioni e dei documenti base all'interno di una realtà aziendale, come può essere un banale organigramma o un business plan, spesso richiede un effort notevole in termini di tempo, oltre che richiedere la presenza di competenze adatte alla loro redazione. Per questo G&H mette a disposizione le competenze ed esperienze legate al mondo delle startup e aziendali per la produzione di questo tipo di documenti, anche a partire da zero.<descriz_servizio>
+<servizi_simili>Business plan,organigrammi<servizi_simili>
+
+<nome_servizio>Project Management e PMO<nome_servizio>
+<descriz_servizio>Grazie alle competenze ed esperienze pluriennali del team di project management, G&H garantisce la capacità di gestione dei progetti, sia guardando le attività di back office e front office aziendale, sia offrendo un servizio di analisi, progettazione, pianificazione e realizzazione degli obiettivi di un progetto, gestendolo in tutte le sue caratteristiche e fasi evolutive, nel rispetto di precisi vincoli di progetto.<descriz_servizio>
 
 ————————————————————
 
@@ -45,13 +64,11 @@
 <5. CAREER>
 <career>G&H accoglie persone dedite e appassionate che ambiscono ad avanzare nella propria carriera apportando il proprio contributo significativo in ambiziosi progetti all'interno di team human-sized. G&H porta avanti una cultura inclusiva e meritocratica, a garanzia del benessere di ogni singola persona all'interno della società. Unisciti a G&H per creare grandi cose insieme.<career>
 
-<nome_posizione>Senior Web Designer<nome_posizione>
-<descriz_posizione>Sei un web designer? Hai almeno vent'anni di esperienza? Candidati.<descriz_posizione>
+<nome_posizione>E-commerce Designer Consultant<nome_posizione>
+<descriz_posizione>Creativo e tech-savvy? Candidati.<descriz_posizione>
 
-<nome_posizione>Commercialista<nome_posizione>
-<descriz_posizione>Cerchiamo un commercialista, un bravissimo commercialista.<descriz_posizione>
+<nome_posizione>Candidatura spontanea<nome_posizione>
+<descriz_posizione>Ognuno ha il suo talento. Qual è il tuo?<descriz_posizione>
 
-<nome_posizione>HR Consultant<nome_posizione>
-<descriz_posizione>Vogliamo un HR Consultant, il migliore HR Consultant.<descriz_posizione>
 
 ————————————————————
